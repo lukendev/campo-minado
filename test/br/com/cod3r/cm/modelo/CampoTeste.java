@@ -116,7 +116,7 @@ public class CampoTeste {
 		Campo campo11 = new Campo(1,1);
 		
 		Campo campo22 = new Campo(2,2);
-		campo.adicionarVizinho(campo11);
+		campo22.adicionarVizinho(campo11);
 		
 		campo.adicionarVizinho(campo22);
 		campo.abrir();
@@ -131,12 +131,12 @@ public class CampoTeste {
 		campo12.minar();
 		
 		Campo campo22 = new Campo(2,2);
-		campo.adicionarVizinho(campo11);
-		campo.adicionarVizinho(campo12);
+		campo22.adicionarVizinho(campo11);
+		campo22.adicionarVizinho(campo12);
 		
 		campo.adicionarVizinho(campo22);
 		campo.abrir();
 		
-		assertTrue(campo22.isAberto() && !campo11.isFechado());
+		assertTrue(campo22.isAberto() && campo11.isFechado());
 	}
 }
