@@ -72,6 +72,10 @@ public class Campo {
 	void minar() {
 		minado = true;
 	}
+	
+	public boolean isMinado() {
+		return minado;
+	}
 
 	public boolean isMarcado() {
 		return marcado;
@@ -97,7 +101,6 @@ public class Campo {
 		boolean desvendado = !minado && aberto;
 		boolean protegido = minado && marcado;
 		return desvendado || protegido;
-		
 	}
 	
 	long minasNaVizinhanca() {
