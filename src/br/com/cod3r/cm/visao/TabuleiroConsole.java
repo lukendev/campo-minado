@@ -44,7 +44,7 @@ public class TabuleiroConsole {
 	private void cicloDoJogo() {
 		try {
 
-			while (tabuleiro.objetivoAlcancado()) {
+			while (!tabuleiro.objetivoAlcancado()) {
 				System.out.println(tabuleiro);
 
 				String digitado = capturarValorDigitado("Digite (x, y): ");
